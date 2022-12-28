@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="footer.css">
+		<link rel="stylesheet" href="todo.css">
+		<link rel="stylesheet" href="digital.css">
+		<link rel="stylesheet" href="lotto.css">
+	<link rel="stylesheet" href="login.css">
+	<link rel="stylesheet" href="item_calendar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:
+	opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@200&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+	<title>BeMySelf</title>
+    <script src="https://kit.fontawesome.com/cfe68d50ca.js"
+     crossorigin="anonymous">
+    </script>
+    <script src="main.js" defer></script>
+		<script src="todo.js" defer></script>
+		<script src="digital.js" defer></script>
+		<script src="lotto.js" defer></script>
+</head>
+<body>
+	<header>
+    	<nav class="navbar">
+        	<div class="navbar_logo">
+            	<i class="fa-solid fa-blog"></i>
+            	<a href="index.html">BMS</a>
+        	</div>
+        	<ul class="navbar_menu">
+            	<li><a href="index.html">Home</a></li>
+           		<li><a href="#">Calendar</a></li>
+            	<li><a href="#">Board</a></li>
+           		<li><a href="#">Search</a></li>
+            	<li><a href="#">Bookings</a></li> 
+        	</ul>
+			<ul class="navbar_time">
+				<li><h1 id="clock"><i class="fa-duotone fa-clock"></i></h1>
+				</li>
+			</ul>
+        	<ul class="navbar_icons">
+            	<li><a href="https://github.com/ghdi6211/ghdi6211.github.io" target="_blank"><i class="fa-brands fa-square-github"></i></a></li>
+            	<li><a href="https://twitter.com/?lang=ko" target="_blank"><i class="fa-brands fa-square-twitter"></i></a></li>
+            	<li><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a></li>
+            	<li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a></li>
+        	</ul>
+        	<a href="#" class="navbar_toogleBtn">
+            	<i class="fa-sharp fa-solid fa-bars"></i>
+        	</a>
+    	</nav>
+    </header>
+    <main>
+		<div class="main_container">
+			<div class="main_item">
+				<div class="container2">
+					<div id="clock">
+						<div class="box">현재 시간</div>
+						<div class="box" id="box2"></div>
+						<div class="box" id="box3"></div>
+					</div>
+					<div id="stwatch">
+						<div class="box">스톱 워치</div>
+						<div class="box" id="time">
+							<span id="hour">00</span>:
+							<span id="minutes">00</span>:<span id="seconds">00</span>:<span id="tenMillis">00</span>
+						</div>
+						<div class="btnBox">
+							<button class="b" id="bt__start">START</button>
+							<button class="b" id="bt__stop">STOP</button>
+							<button class="b" id="bt__reset">RESET</button>
+						</div>
+					</div>
+				</div>
+			</div>
+    		<div class="main_item">
+				<div class="btn">
+					<form action="#" method="post" id="form_login">
+						<input  type="text" placeholder="ID">
+						<input  type="text" placeholder="PW">
+						<button class="button" type="button">Login</button>
+					</form>
+					<div class="sin">
+						<button class="button" type="button">Join</button>
+						<button class="button" type="button">Find ID or PW</button>
+
+					</div>
+				</div>
+			</div>
+			<div class="main_item">
+  			<div class="container3">
+    			<input type="text" id="tarNum" readonly>
+    			<div class="pickD">
+      			<button class="btnup" id="btnpick"> 뽑기 </button>
+      			<button class="btnup" id="btnreset"> 지우기 </button>
+    			</div>
+    			<div id="select">
+      			<form>
+        			<fieldset id="btnset" style="border: none;" >
+          			<legend style="color: white;">번호 고르기</legend>
+          			<input type="button" value="1" class="btnNum">
+          			<input type="button" value="2" class="btnNum">
+          			<input type="button" value="3" class="btnNum">
+          			<input type="button" value="4" class="btnNum">
+          			<input type="button" value="5" class="btnNum">
+          			<input type="button" value="6" class="btnNum">
+          			<input type="button" value="7" class="btnNum">
+          			<input type="button" value="8" class="btnNum">
+          			<input type="button" value="9" class="btnNum">
+          			<input type="button" value="10" class="btnNum">
+          			<input type="button" value="11" class="btnNum">
+          			<input type="button" value="12" class="btnNum">
+          			<input type="button" value="13" class="btnNum">
+          			<input type="button" value="14" class="btnNum">
+								<input type="button" value="15" class="btnNum">
+								<input type="button" value="16" class="btnNum">
+								<input type="button" value="17" class="btnNum">
+								<input type="button" value="18" class="btnNum">
+								<input type="button" value="19" class="btnNum">
+								<input type="button" value="20" class="btnNum">
+          			<input type="button" value="21" class="btnNum">
+          			<input type="button" value="22" class="btnNum">
+          			<input type="button" value="23" class="btnNum">
+          			<input type="button" value="24" class="btnNum">
+          			<input type="button" value="25" class="btnNum">
+          			<input type="button" value="26" class="btnNum">
+          			<input type="button" value="27" class="btnNum">
+          			<input type="button" value="28" class="btnNum">
+         			 	<input type="button" value="29" class="btnNum">
+          			<input type="button" value="30" class="btnNum">
+          			<input type="button" value="31" class="btnNum">
+          			<input type="button" value="32" class="btnNum">
+          			<input type="button" value="33" class="btnNum">
+          			<input type="button" value="34" class="btnNum">
+          			<input type="button" value="35" class="btnNum">
+          			<input type="button" value="36" class="btnNum">
+          			<input type="button" value="37" class="btnNum">
+          			<input type="button" value="38" class="btnNum">
+          			<input type="button" value="39" class="btnNum">
+          			<input type="button" value="40" class="btnNum">
+          			<input type="button" value="41" class="btnNum">
+          			<input type="button" value="42" class="btnNum">
+          			<input type="button" value="43" class="btnNum">
+          			<input type="button" value="44" class="btnNum">
+          			<input type="button" value="45" class="btnNum">
+          			<input type="button" value="46" class="btnNum">
+      				</fieldset>
+    				</form>
+    			</div>
+   			 <div class="mypick">
+      <input type="text" id="myNum" readonly>
+      <button id="btnck" onclick="mynumchk()">당첨 확인</button>
+      <button id="btnre"onclick="mynumre()" >내번호 초기화</button>
+    </div>
+  </div>
+			</div>
+			<div class="main_item box-4" id="cal">
+				<div class="team">
+					<div class="app">
+							<h1>TO DO LIST</h1>
+							<ul id="todo-list">
+							</ul>
+							<form id="todo-form">
+								<input name="todo" type="text" placeholder="TO DO..."
+								maxlength="16" autocomplete="off"><input type="submit"
+								value="추가">
+							</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		</main>
+    <footer>
+    	<div class="notice_box">
+    		<a href="#">Notice</a>
+    		<a href="#">All Service</a>
+    	</div>
+    	<div class="aside_box">
+    		<div class="area_user">
+    			<div class="area_user_row">
+    				<span class="text_bold-13">Creators</span>
+    				<ul>
+    					<li><a href="#">Creators</a></li>
+    					<li><a href="#">Small Business</a></li>
+    				</ul>
+    			</div>
+    			<div class="area_user_row">
+    				<span class="text_bold-13">Partners</span>
+    				<ul>
+    					<li><a href="#">Advertisement</a></li>
+    					<li><a href="#">Open API</a></li>
+    					<li><a href="#">Store Opening</a></li>
+    				</ul>
+    			</div>
+    			<div class="area_user_row">
+    				<span class="text_bold-13">Developers</span>
+    				<ul>
+    					<li><a href="#">Developer Center</a></li>
+    					<li><a href="#">Open API</a></li>
+    					<li><a href="#">Open Source</a></li>
+    					<li><a href="#">Mendsaikhan</a></li>
+    				</ul>
+    			</div>
+    		</div>
+    		<div class="area_col">
+    			<div class="ac_content">
+    				<div class="text_bold-13">JavaScript</div>
+    				<div class="ac_link"><a href="/">Download</a></div>
+    			</div>
+    			<a href="#"><i class="fa-brands fa-js"></i></a>
+    		</div>
+    		<div class="area_col">
+    			<div class="ac.content">
+    				<div class="text_bold-13">Fontawesome</div>
+    				<div class="ac_link"><a href="https://fontawesome.com/" target="_blank">Go</a></div>
+    			</div>
+    			<a href="#"><i class="fa-regular fa-flag"></i></a>
+    		</div>
+    	</div>
+    	<div class="bottom_box">
+    		<ul>
+    			<li><a href="#">Made</a></li>
+    			<li><a href="#">For</a></li>
+    			<li><a href="#">Personal</a></li>
+    			<li><a href="#">Use</a></li>
+    		</ul>
+    	</div>
+    </footer>
+</body>
+</html>

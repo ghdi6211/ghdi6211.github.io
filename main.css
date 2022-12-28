@@ -1,0 +1,65 @@
+main {
+	background : linear-gradient(45deg, rgb(206, 114, 206), rgb(233, 233, 160));
+  	/*min-height: 700px;*/
+		height: calc(100vh - 240px);
+	position: relative;
+	margin: 0;
+}
+
+.main_container {
+	margin: 0;
+  	display: grid;
+	grid-template-columns: auto 350px; /* 각 행(세로줄)의 길이 */
+	grid-template-rows: 300px 380px; /* 각 열(가로줄)의 길이 */
+	gap: 10px; 
+}
+
+.main_item {
+	width: 99%;
+	height: 100%;
+	font-size: 40px;
+	border: 1px solid #dee3eb;
+	text-align: center;
+}
+
+.box-4 {
+	display: flex;
+	flex-direction: column;
+	border: none;
+}
+
+.box-4 > div:first-child {
+	flex: 2;
+}
+
+.box-4 > div:last-child {
+	flex: 7;
+}
+
+.gap-box {
+	height: 10px;
+}
+.event {
+	border: 1px solid #dee3eb;
+}
+.item_event,
+.item_calendar {
+	font-size: initial;
+	border: 1px solid #dee3eb;
+}
+
+@media screen and (max-width: 768px){
+	main {
+		background : linear-gradient(45deg, rgb(206, 114, 206), rgb(233, 233, 160));
+		min-height: 700px;
+		position: relative;
+		margin: 0;
+	}
+	.main_container {
+		margin: 0;
+		display: none;
+		grid-template-columns: auto auto; /* 각 행(세로줄)의 길이 */
+		grid-template-rows: auto auto; /* 각 열(가로줄)의 길이 */
+		gap: 10px; 
+	}
+}
