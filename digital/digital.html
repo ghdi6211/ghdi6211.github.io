@@ -4,23 +4,32 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="list.css">
-  <script src="list.js" defer></script>
+  <title>디지털 시계</title>
+  <link rel="stylesheet" href="digital.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cute+Font&family=Source+Serif      +Pro:wght@200&family=Zen+Dots&display=swap" rel="stylesheet">
+  <script src="digital.js" defer></script>
 </head>
 <body>
-  <div class="main_item box-4">
-    <div class="team">
-      <div class="app">
-          <h1>TO DO LIST</h1>
-          <ul id="todo-list">
-          </ul>
-          <form id="todo-form">
-            <input name="todo" type="text" placeholder="TO DO..."
-            maxlength="16" autocomplete="off"><input type="submit"
-            value="추가">
-          </form>
+  <div class="container2">
+    <div id="clock">
+      <div class="box">현재 시간</div>
+      <div class="box" id="box2"></div>
+      <div class="box" id="box3"></div>
+    </div>
+    <div id="stwatch">
+      <div class="box">스톱 워치</div>
+      <div class="box" id="time">
+        <span id="hour">00</span>:
+        <span id="minutes">00</span>:<span id="seconds">00</span>:<span id="tenMillis">00</span>
       </div>
+      <div class="btnBox">
+        <button class="b" id="bt__start">START</button>
+        <button class="b" id="bt__stop">STOP</button>
+        <button class="b" id="bt__reset">RESET</button>
+      </div>
+      <button class="t" onclick="location.href = '../lotto/lotto.html'">로또</button>
     </div>
   </div>
 </body>
