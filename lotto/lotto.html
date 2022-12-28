@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="lotto.css">
+  <script src="lotto.js" defer></script>
+</head>
+<body>
+  <h2>Lotto</h2>
+  <div class="container">
+    <input type="text" id="tarNum" readonly>
+    <div class="pickD">
+      <button class="btnup" id="btnpick"> 뽑기 </button>
+      <button class="btnup" id="btnreset"> 지우기 </button>
+    </div>
+    <div id="select">
+      <form>
+        <fieldset id="btnset" style="border: none;" >
+          <legend style="color: white;">번호 고르기</legend>
+          <input type="button" value="1" class="btnNum">
+          <input type="button" value="2" class="btnNum">
+          <input type="button" value="3" class="btnNum">
+          <input type="button" value="4" class="btnNum">
+          <input type="button" value="5" class="btnNum">
+          <input type="button" value="6" class="btnNum">
+          <input type="button" value="7" class="btnNum">
+          <input type="button" value="8" class="btnNum">
+          <input type="button" value="9" class="btnNum">
+          <input type="button" value="10" class="btnNum">
+          <input type="button" value="11" class="btnNum">
+          <input type="button" value="12" class="btnNum">
+          <input type="button" value="13" class="btnNum">
+          <input type="button" value="14" class="btnNum">
+          <input type="button" value="15" class="btnNum">
+          <input type="button" value="16" class="btnNum">
+          <input type="button" value="17" class="btnNum">
+          <input type="button" value="18" class="btnNum">
+          <input type="button" value="19" class="btnNum">
+          <input type="button" value="20" class="btnNum">
+          <input type="button" value="21" class="btnNum">
+          <input type="button" value="22" class="btnNum">
+          <input type="button" value="23" class="btnNum">
+          <input type="button" value="24" class="btnNum">
+          <input type="button" value="25" class="btnNum">
+          <input type="button" value="26" class="btnNum">
+          <input type="button" value="27" class="btnNum">
+          <input type="button" value="28" class="btnNum">
+          <input type="button" value="29" class="btnNum">
+          <input type="button" value="30" class="btnNum">
+          <input type="button" value="31" class="btnNum">
+          <input type="button" value="32" class="btnNum">
+          <input type="button" value="33" class="btnNum">
+          <input type="button" value="34" class="btnNum">
+          <input type="button" value="35" class="btnNum">
+          <input type="button" value="36" class="btnNum">
+          <input type="button" value="37" class="btnNum">
+          <input type="button" value="38" class="btnNum">
+          <input type="button" value="39" class="btnNum">
+          <input type="button" value="40" class="btnNum">
+          <input type="button" value="41" class="btnNum">
+          <input type="button" value="42" class="btnNum">
+          <input type="button" value="43" class="btnNum">
+          <input type="button" value="44" class="btnNum">
+          <input type="button" value="45" class="btnNum">
+          <input type="button" value="46" class="btnNum">
+      </fieldset>
+    </form>
+    </div>
+    <div class="mypick">
+      <input type="text" id="myNum" readonly>
+      <button id="btnck" onclick="mynumchk()">당첨 확인</button>
+      <button id="btnre"onclick="mynumre()" >내번호 초기화</button>
+      <button id="btnne" onclick="location.href = '../digital/digital.html'">시계 바로가기</button>
+    </div>
+  </div>
+</body>
+</html>

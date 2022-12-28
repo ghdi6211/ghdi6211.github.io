@@ -1,0 +1,66 @@
+html,
+body {
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+h2 {
+  color: aliceblue;
+  font-size: 70px;
+  text-align: center;
+  margin: 10px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#tarNum {
+  width: 300px;
+  height: 30px;
+}
+.pickD {
+  display: flex;
+}
+
+.pickD button {
+  width: 144px;
+  font-size: 20px;
+  margin: 10px;
+}
+#select  fieldset{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-basis: 50px;
+  width: 300px;
+  flex-wrap: wrap;
+}
+
+#select input{
+  margin: 2px;
+  color:  black;
+  width: 40px;
+  font-size: 20px;
+}
+.mypick {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#myNum {
+  width: 300px;
+  height: 30px;
+  margin: 10px;
+}
+#btnck,
+#btnre,
+#btnne {
+  width: 300px;
+  height: 40px;
+  margin: 5px;
+}
